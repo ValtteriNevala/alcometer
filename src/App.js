@@ -90,10 +90,10 @@ setResult (alcolevel);
 <div>
 <label>Gender</label>
 <input type="radio" name="gender"  value="male" defaultChecked onChange= {e => setGender (e.target.value)}/><label>Male</label>
-<input type="radio" name="gender" value="female" defaultChecked onChange= {e => setGender (e.target.value)}/><label>Female</label>
+<input type="radio" name="gender" value="female" onChange= {e => setGender (e.target.value)}/><label>Female</label>
 </div>
 <div>
-  <output>{result}</output>
+  <output>{result.toFixed(1)}</output>
 </div>
 
 <button>Calculate</button>
